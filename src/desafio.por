@@ -46,20 +46,21 @@ programa
 
 	funcao vazio printDecresente(inteiro vet[]){
 		inteiro troca= 0
-			para(inteiro i = 0; i < 10 ; i++){
-				para(inteiro c=i; c < 9; c++){
-					se(vet[c] < vet[c + 1])
-					troca = vet[c]
-					vet[c] = vet[c + 1]
-					vet[c + 1] = troca
+		para(inteiro i = 0; i < 10 ; i++){
+			para(inteiro j=0; j < 9; j++){
+				se(vet[j] < vet[j + 1]){
+					troca = vet[j]
+					vet[j] = vet[j + 1]
+					vet[j + 1] = troca
 				}
-			}
+			}	
+		}
 
-			para(inteiro i=0; i < 10; i++){
-				escreva(vet[i])
-			}
-	
+		para(inteiro i=0; i < 10; i++){
+			escreva(vet[i]," ")
+		}
 	}
+	
 	
 	funcao vazio printPares(inteiro vet[]){
 		escreva("\nCPares: ")
